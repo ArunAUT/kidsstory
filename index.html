@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" label = "" placeholder="Username" required>
+
+<h4>Username is the Colour Of Your Laptop In Capital Letters (like WHITE , GREY))</h4>
+
+
+        <input type="password" id="password" placeholder="Password" required>
+
+<h4>The password is the day and month of your date of birth in DDMM format (e.g., 0312 if your date of birth is December 3rd)</h4>
+
+        <button onclick="validateLogin()">Login</button>
+        <div class="error hidden" id="error-message">Invalid Username or Password!</div>
+    </div>
+
+    <div class="hidden" id="success-container">
+        <P><h2><center>Friendship between two kids</center></p> </h2>
+<P><h2><center>(A delightful surprise for the occasion)</center></p> </h2>
+<P><h2><center>Story written by Runa of grade 9</center></p> </h2>
+
+<P><h3>
+
+Gane, a talented football player known for his on-field competence and compassionate nature, had a devoted fan named Runa. Runa admired Gane not just for his skills but for his kindness and eagerly attended every game he played.
+</P></h3>
+
+<P><h3>
+
+One day, while Gane sustained an injury. His mother, Dian Ray, quickly admitted him to the hospital where he underwent treatment. During this time, Runa, who missed seeing Gane play, wanted to visit him. However, finding Gane’s current whereabouts proved challenging. Despite trying, Runa struggled to locate him. He didn't want to call Gane and preferred to surprise him instead.
+
+</P></h3>
+
+<P><h3>
+
+After some online research, Runa suspected that Gane’s father, Clive Ray, and his mother might have once run a mobile coffee shop in a van, which led him to a place called 'Bettle Towns.' However, he was unsure about Gane’s actual place of residence. Eager to check on Gane’s health, Runa set off, preparing himself with a generous supply of fruits and nuts.
+As Runa travelled, he was fascinated by the charm of Bettle Towns. He marvelled at an attractive golf course he had always wanted to play and was delighted by a serene lake with elegant white ducks. Upon reaching Gane’s supposed address, Runa hesitated, as he still doubts whether he had the right location. He decided to call Gane for the first time for enquiring about his health.
+
+</P></h3>
+
+<P><h3>
+Gane told Runa that he lived in a bigger town nearby, which made Runa realize he might have the wrong address. Not wanting to bother Gane while he was recovering, Runa decided to head back. He ended up munching on the fruits and nuts he had bought for Gane for nearly two weeks, joking that he’d become a walking fruit basket by the time he was done!
+
+</P></h3>
+
+<P><h3>
+
+Two weeks later, by a lucky twist of fate, Gane came to watch a football match, and Runa happened to be there too. The venue had a curtain separating the different sections, so they couldn’t see each other. At the end of the match, Gane and Runa unexpectedly crossed paths. To Gane’s surprise, it was his birthday that day, and Runa took the opportunity to wish him a heartfelt “Happy Birthday.” They shared a good laugh over the amusing coincidence of meeting under such circumstances, adding a touch of chance to Jane’s special day and wants him to be a VERY SUCCESSFUL person. He also wanted to check with Gane if 'Bettle Towns' was his place of residence, but he forgot to ask and still wonders if it really was.
+</P></h3>
+<P><h3>
+
+Moral: Sometimes, unexpected diversions and challenges lead to delightful surprises and new connections.
+
+</P></h2>
+
+
+
+    </div>
+
+    <script>
+        function validateLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (username === "PINK" && password === "1509") {
+                document.getElementById('login-container').classList.add('hidden');
+                document.getElementById('success-container').classList.remove('hidden');
+            } else {
+                errorMessage.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
